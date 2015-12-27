@@ -14,6 +14,7 @@
 		DB3588F81BF808F600DD772F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3588F61BF808F600DD772F /* LaunchScreen.storyboard */; };
 		DB3589031BF808F600DD772F /* soundBtnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3589021BF808F600DD772F /* soundBtnTests.swift */; };
 		DB35890E1BF808F600DD772F /* soundBtnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB35890D1BF808F600DD772F /* soundBtnUITests.swift */; };
+		DB35891C1BF80D7A00DD772F /* sample.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DB35891B1BF80D7A00DD772F /* sample.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		DB3589091BF808F600DD772F /* soundBtnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = soundBtnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB35890D1BF808F600DD772F /* soundBtnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundBtnUITests.swift; sourceTree = "<group>"; };
 		DB35890F1BF808F600DD772F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB35891B1BF80D7A00DD772F /* sample.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sample.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		DB3588EC1BF808F600DD772F /* soundBtn */ = {
 			isa = PBXGroup;
 			children = (
+				DB35891B1BF80D7A00DD772F /* sample.mp3 */,
 				DB3588ED1BF808F600DD772F /* AppDelegate.swift */,
 				DB3588EF1BF808F600DD772F /* ViewController.swift */,
 				DB3588F11BF808F600DD772F /* Main.storyboard */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					DB3588E91BF808F600DD772F = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 35AN996NRM;
 					};
 					DB3588FD1BF808F600DD772F = {
 						CreatedOnToolsVersion = 7.1;
@@ -231,6 +235,7 @@
 			files = (
 				DB3588F81BF808F600DD772F /* LaunchScreen.storyboard in Resources */,
 				DB3588F51BF808F600DD772F /* Assets.xcassets in Resources */,
+				DB35891C1BF80D7A00DD772F /* sample.mp3 in Resources */,
 				DB3588F31BF808F600DD772F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +334,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -373,6 +379,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -397,10 +404,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = soundBtn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.visionsgate.soundBtn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -408,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = soundBtn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.visionsgate.soundBtn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +495,7 @@
 				DB3589141BF808F600DD772F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB3589151BF808F600DD772F /* Build configuration list for PBXNativeTarget "soundBtnTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +504,7 @@
 				DB3589171BF808F600DD772F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB3589181BF808F600DD772F /* Build configuration list for PBXNativeTarget "soundBtnUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +513,7 @@
 				DB35891A1BF808F600DD772F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
