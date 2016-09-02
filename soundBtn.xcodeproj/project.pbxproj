@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F55456C1D7970AC000AA67C /* heex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F55456B1D7970AC000AA67C /* heex.mp3 */; };
 		9FA602561D0AAA7200479B88 /* hee.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9FA602551D0AAA7200479B88 /* hee.mp3 */; };
 		DB3588EE1BF808F600DD772F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3588ED1BF808F600DD772F /* AppDelegate.swift */; };
 		DB3588F01BF808F600DD772F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3588EF1BF808F600DD772F /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F55456B1D7970AC000AA67C /* heex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heex.mp3; sourceTree = "<group>"; };
 		9FA602551D0AAA7200479B88 /* hee.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hee.mp3; sourceTree = "<group>"; };
 		DB3588EA1BF808F600DD772F /* soundBtn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soundBtn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB3588ED1BF808F600DD772F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		DB3588EC1BF808F600DD772F /* soundBtn */ = {
 			isa = PBXGroup;
 			children = (
+				9F55456B1D7970AC000AA67C /* heex.mp3 */,
 				DB35891B1BF80D7A00DD772F /* sample.mp3 */,
 				9FA602551D0AAA7200479B88 /* hee.mp3 */,
 				DB3588ED1BF808F600DD772F /* AppDelegate.swift */,
@@ -238,6 +241,7 @@
 			files = (
 				DB3588F81BF808F600DD772F /* LaunchScreen.storyboard in Resources */,
 				DB3588F51BF808F600DD772F /* Assets.xcassets in Resources */,
+				9F55456C1D7970AC000AA67C /* heex.mp3 in Resources */,
 				9FA602561D0AAA7200479B88 /* hee.mp3 in Resources */,
 				DB35891C1BF80D7A00DD772F /* sample.mp3 in Resources */,
 				DB3588F31BF808F600DD772F /* Main.storyboard in Resources */,
