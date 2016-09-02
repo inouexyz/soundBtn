@@ -2,19 +2,20 @@
 //  ViewController.swift
 //  soundBtn
 //
-//  Created by ginga on 2015/11/15.
-//  Copyright © 2015年 ginga. All rights reserved.
+//  Created by inouexyz on 20151115.
+//  Copyright © 2015-2016 inouexyz. All rights reserved.
 //
+//  Latest edited by inouexyz on 20160729
 
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,AVAudioPlayerDelegate {
     
     var player:AVAudioPlayer!
-
+    
     @IBAction func btnTap(sender: AnyObject) {
-        let path = NSBundle.mainBundle().pathForResource("sample", ofType: "mp3")!
+        let path = NSBundle.mainBundle().pathForResource("hee", ofType: "mp3")!
         let url = NSURL.fileURLWithPath(path)
         
         // AVAudioPlayerのインスタンス化
@@ -26,6 +27,7 @@ class ViewController: UIViewController {
         
         // 再生
         player.play()
+        
     }
     
     override func viewDidLoad() {

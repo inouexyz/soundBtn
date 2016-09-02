@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4B31CD339B378B70B06C7CDFC56C367639A93C9C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4B31CD339B378B70B06C7CDFC56C367639A93C9C" : 0,
+    "F75F0F33B309556AD6796938692A7AC6B8330BCE" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A575F264-6FBF-42F2-84AD-D7889FA0D291",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4B31CD339B378B70B06C7CDFC56C367639A93C9C" : "soundBtn\/",
+    "F75F0F33B309556AD6796938692A7AC6B8330BCE" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "soundBtn",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "soundBtn.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:inouexyz\/soundBtn.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4B31CD339B378B70B06C7CDFC56C367639A93C9C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:inouexyz\/unitySample.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F75F0F33B309556AD6796938692A7AC6B8330BCE"
+    }
+  ]
+}
