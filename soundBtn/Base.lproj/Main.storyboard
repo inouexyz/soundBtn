@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -11,33 +12,39 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="soundBtn" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="L9a-Tc-y7h"/>
+                        <viewControllerLayoutGuide type="bottom" id="7QD-cs-0OC"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBz-h6-xZg">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
-                                <state key="normal" title="音出る"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBz-h6-xZg">
+                                <rect key="frame" x="76" y="204" width="160" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RBz-h6-xZg" secondAttribute="height" multiplier="40:31" id="x3E-O9-aSs"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="hee_btn"/>
+                                <state key="highlighted" backgroundImage="hee_btn_on"/>
                                 <connections>
-                                    <action selector="btnTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="giK-CS-Acz"/>
+                                    <action selector="btnTap:" destination="BYZ-38-t0r" eventType="touchDown" id="nF0-Po-vVB"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="RBz-h6-xZg" secondAttribute="trailing" constant="117" id="61M-29-F3V"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RBz-h6-xZg" secondAttribute="bottom" constant="269" id="gam-h9-pRo"/>
-                            <constraint firstItem="RBz-h6-xZg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="249" id="hU3-Tk-aJ1"/>
-                            <constraint firstItem="RBz-h6-xZg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="117" id="hbq-ZP-jUZ"/>
+                            <constraint firstItem="RBz-h6-xZg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="8hk-aa-RiN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="RBz-h6-xZg" secondAttribute="trailing" constant="60" id="h8j-fy-TBM"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="162.66666666666666" y="406.59333333333331"/>
+            <point key="canvasLocation" x="162" y="406"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hee_btn" width="160" height="124"/>
+        <image name="hee_btn_on" width="160" height="124"/>
+    </resources>
 </document>
