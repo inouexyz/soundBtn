@@ -5,7 +5,7 @@
 //  Created by inouexyz on 20151115.
 //  Copyright © 2015-2016 inouexyz. All rights reserved.
 //
-//  Latest edited by inouexyz on 20160902
+//  Latest edited by inouexyz on 20170312
 
 import UIKit
 import AVFoundation
@@ -17,13 +17,13 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
     var player3:AVAudioPlayer!
     var i = 0
     
-    @IBAction func btnTap(sender: AnyObject) {
-        let path = NSBundle.mainBundle().pathForResource("hee", ofType: "mp3")!
-        let url = NSURL.fileURLWithPath(path)
+    @IBAction func btnTap(_ sender: AnyObject) {
+        let path = Bundle.main.path(forResource: "hee", ofType: "mp3")!
+        let url = URL(fileURLWithPath: path)
         
         if(i==0){
             do{
-                player = try AVAudioPlayer(contentsOfURL: url, fileTypeHint: nil)
+                player = try AVAudioPlayer(contentsOf: url, fileTypeHint: nil)
                 player.play()
             }catch{
                 print("Failed AVAudioPlayer Instance1")
@@ -32,7 +32,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
             
         } else if(i==1) {
             do{
-                player2 = try AVAudioPlayer(contentsOfURL: url, fileTypeHint: nil)
+                player2 = try AVAudioPlayer(contentsOf: url, fileTypeHint: nil)
                 player2.play()
             }catch{
                 print("Failed AVAudioPlayer Instance2")
@@ -41,7 +41,7 @@ class ViewController: UIViewController,AVAudioPlayerDelegate {
             
         } else if(i==2) {
             do{
-                player3 = try AVAudioPlayer(contentsOfURL: url, fileTypeHint: nil)
+                player3 = try AVAudioPlayer(contentsOf: url, fileTypeHint: nil)
                 player3.play()
             }catch{
                 print("Failed AVAudioPlayer Instance3")
